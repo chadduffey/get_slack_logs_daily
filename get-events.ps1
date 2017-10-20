@@ -1,8 +1,8 @@
 #Script Parameters
 $earliest = 1506816061 #This represents October 1st at 0:01am
 
-$output_file = "c:\iceberg\slack\data\previous.log"
-$marker_file = "c:\iceberg\slack\data\marker.cfg"
+$output_file = "c:\iceberg\slack\data\slack.log"
+$marker_file = "c:\iceberg\slack\script\marker.cfg"
 $last_marker = Get-Content $marker_file
 
 if ($last_marker -eq $null){
@@ -54,7 +54,3 @@ while($page -lt 100)
     }
 
 }
-
-
-
-
